@@ -32,6 +32,9 @@
     td.num{
         text-align: right;
     }
+    tbody > tr:nth-child(2n){ /* nth-child provoca efeito zebrado na tabela (2n) pula de duas em duas fica uma sim a outra não (odd) na impares ou (even) nas pares*/
+        background-color: lightgray;
+    }
 
 
     
@@ -55,8 +58,8 @@
         <caption>População das Unidades Federativas</caption>
 
     <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
 
     </thead>
         <tbody>
@@ -173,7 +176,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th> Total de Habitantes</th>
+                <th scope="row"> Total de Habitantes</th>
                 <td class="num" ><strong>210.147.125</strong></td>
             </tr>
 
