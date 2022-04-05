@@ -13,6 +13,7 @@
     table{
         width: 400px;
         border-collapse: collapse;
+        position: relative;
     }
     caption{
         font-size: 1,5em;
@@ -20,6 +21,11 @@
         padding: 10px;
         background-color: black;
         color: white;
+    }
+    thead > tr > th{ /* Forma para deixar cabeçalho fixo sem rolagem*/
+        position: sticky;
+        top: -1px;
+        background-color: gray;
     }
     td, th{
         border: 1px solid black;
