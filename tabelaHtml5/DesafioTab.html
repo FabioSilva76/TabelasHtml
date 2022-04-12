@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Notas e Média</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td{
+            border: 1px solid rgb(222, 50, 50);
+            text-align: center;
+        }
+        .mexata{
+            text-align: left;
+                       
+        }
+        th{
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela de Notas e Média</h1>
+    <table>
+        <thead>
+        <tr>
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Diciplinas</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>            
+        </tr>
+        <tr>
+            <th>Nota 1 </th>
+            <th>Nota 2 </th>
+        </tr>
+        
+        </thead>
+        <tbody>       
+            
+            <tr>
+                <td rowspan="4" scope="rowgroup"><strong>Exatas</strong> </td>
+                <td>Matemática</td>
+                <td>n1</td>
+                <td>n2</td>
+                <td>média</td>
+            </tr>
+            <tr>
+            <td>Física</td>
+            <td>n1</td>
+            <td>n2</td>
+            <td>média</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>n1</td>
+            <td>n2</td>
+            <td>média</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>n1</td>
+            <td>n2</td>
+            <td>média</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="mexata">Média de Exatas</th>
+            <th>média</th>
+        </tr>
+        <tr>
+            <td rowspan="2"><strong>Humanas</strong> </td>
+            <td>História</td>
+            <td>n1</td>
+            <td>n2</td>
+            <td>média</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>n1</td>
+            <td>n2</td>
+            <td>média</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="mexata">Média de Humanas</th>
+            <th>média</th>
+        </tr>
+    
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
